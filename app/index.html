@@ -1,16 +1,22 @@
-<<!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html ng-app="phonecatApp">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page built on AngularJS</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="../public/js/angular.min.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page built on AngularJS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../public/js/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
 
-    <body>
+<body ng-controller="PhoneListController">
+    <h1>Phone list</h1>
+    <ul>
+        <li ng-repeat="phone in phones">
+            <p><strong>{{phone.name}}</strong>&nbsp; {{phone.snippet}}</p>
+        </li>
+    </ul>
+</body>
 
-    </body>
-
-    </html>
+</html>
