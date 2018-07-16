@@ -6,15 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page built on AngularJS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="public/js/angular.min.js"></script>
-    <script src="app.module.js"></script>
-    <script src="phone-list/phone-list.module.js"></script>
-    <script src="phone-list/phone-list.component.js"></script>
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+
 </head>
 
 <body>
-    <h1>Phone list</h1>
-    <phone-list></phone-list>
+    <div class="container">
+
+        <phone-list></phone-list>
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="phone-list/phone-list.module.js"></script>
+    <script src="phone-list/phone-list.component.js"></script>
 </body>
 
 </html>
