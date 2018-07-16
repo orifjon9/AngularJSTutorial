@@ -8,15 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../public/js/angular.min.js"></script>
     <script src="app.js"></script>
+    <script src="phone-list.component.js"></script>
 </head>
 
-<body ng-controller="PhoneListController">
+<body>
     <h1>Phone list</h1>
-    <ul>
-        <li ng-repeat="phone in phones">
-            <p><strong>{{phone.name}}</strong>&nbsp; {{phone.snippet}}</p>
-        </li>
-    </ul>
+    <phone-list></phone-list>
 </body>
 
 </html>
