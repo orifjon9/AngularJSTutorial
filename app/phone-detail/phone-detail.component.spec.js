@@ -7,13 +7,16 @@ describe('phoneDetail', function() {
     describe('PhoneDetailController', function() {
         var $httpBackend, ctrl;
 
+        var xyzPhoneData = {
+            name: 'phone xyz',
+            images: ['image/url1.png', 'image/url2.png']
+        };
+
         beforeEach(inject(function($componentController, _$httpBackend_, $routeParams) {
             $httpBackend = _$httpBackend_;
             $httpBackend.expectGET('assets/data/xyz.json')
-                .respond({
-                    name: 'phone xyz',
-                    images: ['test_img1', 'test_img2']
-                });
+                .respond(xyzPhoneData);
+
             $routeParams.id = 'xyz';
             ctrl = $componentController('phoneDetail');
         }));
