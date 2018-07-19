@@ -5,7 +5,7 @@
 
 <ul class="phone-thumbs">
     <li ng-repeat="img in $ctrl.phone.images">
-        <img width="70px" ng-src="{{img}}" ng-click="$ctrl.setImage(img)">
+        <img width="70px" ng-src="{{img}}" ng-class="{selected: img === $ctrl.defaultImageUrl}" ng-click="$ctrl.setImage(img)">
     </li>
 </ul>
 
